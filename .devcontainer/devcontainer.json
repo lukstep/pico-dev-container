@@ -1,0 +1,17 @@
+{
+    "name": "Rpi Pico",
+    "image": "lukstep/raspberry-pi-pico-sdk:v0.0.2",
+    "customizations": {
+        "vscode": {
+            "settings": {},
+            "extensions": [
+                "ms-vscode.cpptools",
+                "llvm-vs-code-extensions.vscode-clangd",
+                "twxs.cmake",
+                "ms-vscode.cmake-tools",
+                "josetr.cmake-language-support-vscode"
+            ]
+        }
+    },
+    "postCreateCommand": "apk add clang-extra-tools"
+}
