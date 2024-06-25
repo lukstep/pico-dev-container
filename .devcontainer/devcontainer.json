@@ -9,9 +9,11 @@
                 "llvm-vs-code-extensions.vscode-clangd",
                 "twxs.cmake",
                 "ms-vscode.cmake-tools",
-                "josetr.cmake-language-support-vscode"
+                "josetr.cmake-language-support-vscode",
+                "marus25.cortex-debug"
             ]
         }
     },
-    "postCreateCommand": "apk add clang-extra-tools"
+    // "initializeCommand": "openocd -f interface/cmsis-dap.cfg -f target/rp2040.cfg -c 'bindto 0.0.0.0' -c 'adapter speed 5000'",
+    "postCreateCommand": "apk add clang-extra-tools gdb-multiarch"
 }

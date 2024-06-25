@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+    {
+        "cwd": "${workspaceRoot}",
+        "executable": "./build/sample.elf",
+        "name": "Debug with OpenOCD",
+        "type": "cortex-debug",
+        "request": "attach",
+        "gdbPath" : "/usr/bin/gdb-multiarch",
+        "objdumpPath": "/usr/bin/arm-none-eabi-objdump",
+        "gdbTarget": "host.docker.internal:3333",
+        "servertype" : "external",
+        "postAttachCommands": ["load", "tbreak main", "c"],
+        "searchDir": ["${env:PICO_SDK_PATH}"],
+    }
+    ]
+}
