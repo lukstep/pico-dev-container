@@ -4,7 +4,7 @@
     {
         "cwd": "${workspaceRoot}",
         "executable": "./build/sample.elf",
-        "name": "Debug with OpenOCD",
+        "name": "Debug",
         "type": "cortex-debug",
         "request": "attach",
         "gdbPath" : "/usr/bin/gdb-multiarch",
