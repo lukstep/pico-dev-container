@@ -8,6 +8,6 @@
                          "-pretty", 
                          "--background-index", 
                          "--query-driver=/usr/bin/arm-none-eabi-gcc",
-                         "--compile-commands-dir=./build"],
+                         "--compile-commands-dir={workspaceFolder}/build"],
     "cmake.launchBehavior": "breakAndReuseTerminal"
 }
