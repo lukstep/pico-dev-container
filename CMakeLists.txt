@@ -10,6 +10,7 @@ set(CMAKE_CXX_COMPILER /usr/bin/arm-none-eabi-g++ CACHE PATH "" FORCE)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_COLOR_DIAGNOSTICS ON)
 
 pico_sdk_init()
 
@@ -20,3 +21,4 @@ pico_enable_stdio_uart(${CMAKE_PROJECT_NAME} 1)
 pico_add_extra_outputs(${CMAKE_PROJECT_NAME})
 
 target_link_libraries(${CMAKE_PROJECT_NAME} pico_stdlib)
+

@@ -9,5 +9,17 @@
                          "--background-index", 
                          "--query-driver=/usr/bin/arm-none-eabi-gcc",
                          "--compile-commands-dir={workspaceFolder}/build"],
-    "cmake.launchBehavior": "breakAndReuseTerminal"
+    "cmake.configureOnOpen": true,
+    "cmake.enableAutomaticKitScan": false,
+    "cmake.launchBehavior": "breakAndReuseTerminal",
+    "cmake.buildTask": true,
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask",
+        "cmake.buildWithTarget",
+        "cmake.setVariant"
+    ],
+    "cmake.environment": {
+        "CLICOLOR_FORCE": "1"
+    }
 }
