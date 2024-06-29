@@ -7,7 +7,7 @@
     "clangd.arguments": ["-log=verbose", 
                          "-pretty", 
                          "--background-index", 
-                         "--query-driver=/usr/bin/arm-none-eabi-gcc",
+                         "--query-driver=/usr/bin/arm-none-eabi-g*",
                          "--compile-commands-dir={workspaceFolder}/build"],
     "cmake.configureOnOpen": true,
     "cmake.enableAutomaticKitScan": false,
