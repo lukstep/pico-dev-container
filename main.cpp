@@ -17,7 +17,7 @@ int main ()
 {
     enable_debug();
     stdio_init_all();   
-    constexpr int LED_PIN = 25;
+    constexpr int LED_PIN = 24;
     gpio_init(LED_PIN);
     gpio_set_dir(LED_PIN, GPIO_OUT);
 
