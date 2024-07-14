@@ -23,7 +23,7 @@
 			"label": "Flash",
 			"detail": "Flash Rpi Pico memory",
 			"type": "shell",
-			"command": "gdb-multiarch ./build/sample.elf -q -ex 'set confirm off' -ex 'target remote host.docker.internal:3333' -ex 'load' -ex 'quit'",
+			"command": "gdb-multiarch ./build/sample.elf -q -ex 'set confirm off' -ex 'target remote host.docker.internal:3333' -ex 'load' -ex 'monitor reset' -ex 'quit'",
 			"dependsOn": [
 				"CMake: build"
 			],
