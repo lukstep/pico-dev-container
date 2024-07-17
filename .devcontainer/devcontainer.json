@@ -10,7 +10,8 @@
                 "twxs.cmake",
                 "ms-vscode.cmake-tools",
                 "josetr.cmake-language-support-vscode",
-                "marus25.cortex-debug"
+                "marus25.cortex-debug",
+                "augustocdias.tasks-shell-input"
             ]
         }
     },

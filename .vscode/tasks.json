@@ -1,4 +1,15 @@
 {
+	"inputs": [
+        {
+            "id": "ELF_PATH",
+            "type": "command",
+            "command": "shellCommand.execute",
+                "args": {
+                "command": "cat ./build/elf_path.txt",
+                "useFirstResult": "true",
+            }
+        }
+    ],
 	"version": "2.0.0",
 	"tasks": [
 		{
@@ -23,7 +34,7 @@
 			"label": "Flash",
 			"detail": "Flash Rpi Pico memory",
 			"type": "shell",
-			"command": "gdb-multiarch ./build/sample.elf -q -ex 'set confirm off' -ex 'target remote host.docker.internal:3333' -ex 'load' -ex 'monitor reset' -ex 'quit'",
+			"command": "gdb-multiarch ${input:ELF_PATH} -q -ex 'set confirm off' -ex 'target remote host.docker.internal:3333' -ex 'load' -ex 'monitor reset' -ex 'quit'",
 			"dependsOn": [
 				"CMake: build"
 			],

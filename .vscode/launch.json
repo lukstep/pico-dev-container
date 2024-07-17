@@ -1,9 +1,20 @@
 {
+    "inputs": [
+        {
+            "id": "ELF_PATH",
+            "type": "command",
+            "command": "shellCommand.execute",
+                "args": {
+                "command": "cat ./build/elf_path.txt",
+                "useFirstResult": "true",
+            }
+        }
+    ],
     "version": "0.2.0",
     "configurations": [
     {
         "cwd": "${workspaceRoot}",
-        "executable": "./build/sample.elf",
+        "executable": "${input:ELF_PATH}",
         "name": "Debug",
         "type": "cortex-debug",
         "request": "attach",
