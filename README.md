@@ -1,1 +1,1 @@
-# Raspberry Pi Pico dev container
+# Raspberry Pi Pico template project

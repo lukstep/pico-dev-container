@@ -4,11 +4,17 @@
     "clangd.checkUpdates": false,
     "clangd.restartAfterCrash": true,
     "clangd.detectExtensionConflicts": true,
-    "clangd.arguments": ["-log=verbose", 
-                         "-pretty", 
-                         "--background-index", 
-                         "--query-driver=/usr/bin/arm-none-eabi-g*",
-                         "--compile-commands-dir={workspaceFolder}/build"],
+    "clangd.arguments": [
+        "-log=verbose",
+        "-pretty",
+        "--background-index",
+        "--query-driver=/usr/bin/arm-none-eabi-g*",
+        "--compile-commands-dir={workspaceFolder}/build"
+    ],
+    "editor.formatOnSave": true,
+    "C_Cpp.formatting": "clangFormat",
+    "C_Cpp.clang_format_path": "/workspaces/pico-dev-container/.clang-format",
+    "C_Cpp.clang_format_sortIncludes": true,
     "cmake.configureOnOpen": true,
     "cmake.enableAutomaticKitScan": false,
     "cmake.launchBehavior": "breakAndReuseTerminal",
@@ -21,5 +27,5 @@
     ],
     "cmake.environment": {
         "CLICOLOR_FORCE": "1"
-    }
+    },
 }
